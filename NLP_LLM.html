@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cityu.edu.hk/">
+                <img src="./Images/CityU_logo.svg.png" alt="CityU Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="genai.html">Generative AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genai1.html">AI Architecture</a></li>
+                        <li><a href="genai2.html">AI Train Flow</a></li>
+                        <li><a href="genai3.html">Foundation Model</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="NLP.html">Mechanism</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+                        <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+                        <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+                        <li><a href="NLP_LLM.html">Large Language Model</a></li>
+                        <li><a href="Comparision.html">Comparision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="bias.html">Bias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bias_source.html">The Source of Bias</a></li>
+                        <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+                        <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="discovery.html">Discoveries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+                        <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+                        <li><a href="discovery_3.html">Prompt Engineering</a></li>
+                        <li><a href="discovery_4.html">Ideal</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>Large Language Model (LLM)</h2>
+                    <p>
+                        Refer to the Research Team, <a href="https://doi.org/10.1007/s43681-024-00583-7" target="_blank"
+                            rel="noopener" class="apa-citation">
+                            Wang et al. (2024)
+                        </a>state that
+                        The current era of models like GPT-4 and Llama 3, characterized by billions of parameters. The
+                        development is from small to large foundation model.
+                        <br>
+                        <br><strong>Mechanism: </strong> models exhibit Emergent Abilities. They don't just predict the
+                        next word; they follow instructions and perform complex reasoning across almost all human
+                        knowledge.
+                        <br>
+                        <br><strong>The Challenge: </strong> models grow, they become "Black Boxes."
+                        <br>
+                        <br><strong>Social Equity Insight:</strong> are now Implicit and Brittle. While LLMs are trained
+                        to be "explicitly unbiased," they often harbor hidden prejudices (Implicit Bias) that only
+                        surface in subtle decision-making tasks, such as hiring or legal drafting support.
+
+                    </p>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/llm.png" alt="LLM " class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+        <article class="content">
+            <div class="two-column">
+
+                <div class="left-column">
+                    <h2>Exploring the Core of LLMs: </h2>
+
+                    <p>
+                        Refer to the Research Team, <a href="https://doi.org/10.48550/arXiv.1706.03762" target="_blank"
+                            rel="noopener" class="apa-citation">
+                            Vaswani et al., (2017)
+                        </a>proposed the <strong>Transformer Architecture.</strong>
+                        <br>
+                        The Transformer model acts as a "digital version" of the human brain, converting external
+                        messages into signals that can be processed and understood by machines.
+                    </p>
+
+                    <ul>
+                        <li><strong>Message Translation:</strong> </li>
+                        <li><strong>Message Learning:</strong> </li>
+                        <li><strong>QKV Matching:</strong> </li>
+                        <li><strong>Reply Generation:</strong> </li>
+                    </ul>
+
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/transformer.png" alt="Transformer Architecture Diagram" class="bias-image">
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>1. Message Translation</h2>
+
+                    <ul>
+                        <br><br><br>
+                        <li><strong>Tokenization:</strong> Raw text is decomposed into smaller units called "tokens."
+                            Each token is assigned a unique numerical ID..</li>
+                        <br><br><br>
+                        <li><strong>Embedding:</strong> Based on these IDs, the system looks up corresponding vectors
+                            from a high-dimensional "Vector Dictionary.".</li>
+                        <br><br><br>
+                        <li><strong>Positional Encoding:</strong> This step injects information about the position of
+                            words in a sequence. In language, word order is fundamental to understanding semantic
+                            meaning.</li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/tokenization.png" alt="Tokenization Process" class="bias-image">
+                        <img src="./Images/positioning.png" alt="Positional Encoding Process" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>2. Message Learning</h2>
+                    <p>The human brain understands meaning through <strong>Context</strong>. A "bat" can be an animal or
+                        sports equipment depending on the surrounding words.</p>
+
+                    <strong>Self-Attention Mechanism:</strong>
+                    <p>The Transformer replicates biological selective attention, allowing the model to focus on
+                        relevant words within a sentence to resolve ambiguity.</p>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/mss_learning.png" alt="Contextual Understanding Visualization"
+                            class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>3. The Waltz of Self-Attention: Q, K, and V</h2>
+                    <p>In this process, every token produces three distinct vectors:</p>
+                    <ul>
+                        <li><strong>Query (Q):</strong> "What am I looking for?"</li>
+                        <li><strong>Key (K):</strong> "What do I have to offer?"</li>
+                        <li><strong>Value (V):</strong> "The actual information I provide."</li>
+                    </ul>
+                    <p><strong>Query-Key Matching:</strong> Scores are calculated to determine how much "attention" one
+                        word should pay to another.</p>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/QKV.png" alt="QKV Vector Interaction" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>4. Reply Generation: Iterative Decoding</h2>
+                    <p>Unlike humans who may think of an entire sentence at once, LLMs generate responses through a
+                        word-by-word (token-by-token) cyclic process.</p>
+
+                    <p><strong>Core Mechanism: Predict the Next Token</strong></p>
+                    <p>At its essence, an LLM is a powerful "probability prediction engine." To generate a response, it
+                        performs the following steps:</p>
+
+                    <ul>
+                        <li><strong>Input Context:</strong> The model receives the original prompt plus any text already
+                            generated.</li>
+                        <li><strong>Probability Distribution:</strong> Through calculations across Transformer layers,
+                            the model assigns a probability score to every token in its vocabulary.</li>
+                        <li><strong>Selection (Sampling):</strong> The model selects the most appropriate token based on
+                            these probabilities. (e.g., Given "AI is", the model predicts "future" has the highest
+                            probability (0.8) and selects it).</li>
+                        <li><strong>Iterative Loop:</strong> The newly generated token is fed back into the input, and
+                            the process repeats until an End-of-Sequence token is generated.</li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/reply.png" alt="Iterative Decoding Process Diagram" class="bias-image">
+                    </div>
+
+
+                    <div class="flat">
+                        <a href="NLP_PLM.html" class="explore-btn">&larr; Back To PLM</a>
+                        <a href="Comparision.html" class="explore-btn">Traditional vs LLMs &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; CS1102 - Course Project - 2025/2026 Semester B
+            <br>Project Topic: LLM for Social Equity: Measuring and Reducing Bias in Language
+            <br>Chan Chak Wing;Chan Kwan To;Lo Wai Sum
+        </p>
+    </footer>
+</body>
+
+</html>

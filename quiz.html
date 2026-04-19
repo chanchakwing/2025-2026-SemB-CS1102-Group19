@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cityu.edu.hk/">
+                <img src="./Images/CityU_logo.svg.png" alt="CityU Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="genai.html">Generative AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genai1.html">AI Architecture</a></li>
+                        <li><a href="genai2.html">AI Train Flow</a></li>
+                        <li><a href="genai3.html">Foundation Model</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="NLP.html">Mechanism</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+                        <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+                        <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+                        <li><a href="NLP_LLM.html">Large Language Model</a></li>
+                        <li><a href="Comparision.html">Comparision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="bias.html">Bias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bias_source.html">The Source of Bias</a></li>
+                        <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+                        <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="discovery.html">Discoveries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+                        <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+                        <li><a href="discovery_3.html">Prompt Engineering</a></li>
+                        <li><a href="discovery_4.html">Ideal</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column" id="quiz-app">
+                    <div id="question-container">
+                        <h3 id="question-text">Loading question...</h3>
+                        <div id="options-container" style="margin-top: 20px;">
+                        </div>
+                        <div style="margin-top: 30px;">
+                            <button id="prev-btn" class="explore-btn" style="background: #95a5a6;">Previous</button>
+                            <button id="next-btn" class="explore-btn">Next</button>
+                            <button id="submit-btn" class="explore-btn"
+                                style="display:none; background: #27ae60;">Submit Quiz</button>
+                        </div>
+                    </div>
+
+                    <div id="result-container" style="display:none;">
+                        <h2>Quiz Results</h2>
+                        <p style="font-size: 1.5rem; margin: 20px 0;">Your Score: <span id="score-display">0</span> /
+                            <span id="total-display">0</span></p>
+                        <div id="feedback-list"></div>
+                        <button id="restart-btn" class="explore-btn" style="margin-top: 20px;">Restart Quiz</button>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper"
+                        style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        <h3>Progress</h3>
+                        <p id="progress-text">Question 1 of 5</p>
+                        <div style="width: 100%; background: #eee; height: 10px; border-radius: 5px; margin-top: 10px;">
+                            <div id="progress-bar"
+                                style="width: 20%; background: #005596; height: 100%; border-radius: 5px; transition: width 0.3s;">
+                            </div>
+                        </div>
+                        <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">
+                            <i>Tip: Each question is based on the "Mechanism" and "Bias" sections of our project.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="quiz_logic.js"></script>
+    <hr>
+    <footer>
+        <p>
+            &copy; CS1102 - Course Project - 2025/2026 Semester B
+            <br>Project Topic: LLM for Social Equity: Measuring and Reducing Bias in Language
+            <br>Chan Chak Wing;Chan Kwan To;Lo Wai Sum
+        </p>
+    </footer>
+</body>
+
+</html>

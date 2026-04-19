@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cityu.edu.hk/">
+                <img src="./Images/CityU_logo.svg.png" alt="CityU Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="genai.html">Generative AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genai1.html">AI Architecture</a></li>
+                        <li><a href="genai2.html">AI Train Flow</a></li>
+                        <li><a href="genai3.html">Foundation Model</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="NLP.html">Mechanism</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+                        <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+                        <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+                        <li><a href="NLP_LLM.html">Large Language Model</a></li>
+                        <li><a href="Comparision.html">Comparision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="bias.html">Bias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bias_source.html">The Source of Bias</a></li>
+                        <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+                        <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="discovery.html">Discoveries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+                        <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+                        <li><a href="discovery_3.html">Prompt Engineering</a></li>
+                        <li><a href="discovery_4.html">Ideal</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>Research Discoveries Overview</h2>
+                    <p>This research summarizes three core findings regarding <strong>LLM Social Equity</strong>,
+                        demonstrating the complete process from identifying problems to implementing technical
+                        solutions.</p>
+                    </h2>
+                    <h3>Discovery 1: Verification of Gender Bias</h3>
+                    <p>
+                        Confirmed that <b>DeepSeek V3.2</b> exhibits "micro-biases" in persuasive tasks by automatically
+                        adjusting its tone based on the recipient's gender.
+                        It tends to use <b>Pathos (emotional)</b> and communal language for women, while favoring
+                        <b>Logos (rational)</b> and logical arguments for men.
+                    </p>
+                    <div class="flat">
+
+                        <a href="discovery_1.html" class="explore-btn">View Detailed Analysis &rarr;</a>
+                    </div>
+
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/gend_tone.png" alt="Gender Bias Analysis" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h3>Discovery 2: Recruitment Fairness Experiment</h3>
+                    <p>
+                        In explicit recruitment scoring tasks, <b>DeepSeek-V3</b> demonstrated strong "self-correction"
+                        capabilities.
+                        When evaluating candidates with identical technical qualifications (Python/SQL) but different
+                        social attributes, the model consistently issued a score of <b>8.0/10</b>, effectively
+                        neutralizing potential discrimination.
+                    </p>
+                    <div class="flat">
+
+                        <a href="discovery_2.html" class="explore-btn">View Detailed Analysis &rarr;</a>
+                    </div>
+
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/recu.png" alt="Recruitment Fairness" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h3>Discovery 3: Technical Interventions</h3>
+                    <p>
+                        The study highlights that <b>Prompt Engineering</b> is a vital mechanism for achieving equity.
+                        Techniques like <b>Adversarial Prompting</b> can reduce bias by approximately <b>80%</b>.
+                        Furthermore, model architecture is crucial; for instance, <b>Claude’s "Constitutional AI"</b>
+                        provides an inherent defensive advantage.
+                    </p>
+                    <div class="flat">
+
+                        <a href="discovery_3.html" class="explore-btn">View Detailed Analysis &rarr;</a>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/prompt_eng.png" alt="Technical Interventions" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <hr>
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h3>Discovery 4: Ideal GenAI Model Operation</h3>
+                    <p>
+                        The study highlights that <b>Balanced Alignment</b> is a vital mechanism for achieving equity.
+                        Techniques like <b>Adversarial Prompting</b> can reduce bias by approximately <b>80%</b>.
+                        Furthermore, model architecture is crucial; for instance, <b>Claude’s "Constitutional AI"</b>
+                        provides an inherent defensive advantage.
+                    </p>
+                    <div class="flat">
+
+                        <a href="discovery_4.html" class="explore-btn">View Detailed Analysis &rarr;</a>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/judge.png" alt="Ideal Operating State" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; CS1102 - Course Project - 2025/2026 Semester B
+            <br>Project Topic: LLM for Social Equity: Measuring and Reducing Bias in Language
+            <br>Chan Chak Wing; Chan Kwan To; Lo Wai Sum
+        </p>
+    </footer>
+</body>
+
+</html>

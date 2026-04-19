@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="https://www.cityu.edu.hk/">
+          <img src="./Images/CityU_logo.svg.png" alt="CityU Logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="genai.html">Generative AI</a>
+            <ul class="dropdown-menu">
+              <li><a href="genai1.html">AI Architecture</a></li>
+              <li><a href="genai2.html">AI Train Flow</a></li>
+              <li><a href="genai3.html">Foundation Model</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="NLP.html">Mechanism</a>
+            <ul class="dropdown-menu">
+              <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+              <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+              <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+              <li><a href="NLP_LLM.html">Large Language Model</a></li>
+              <li><a href="Comparision.html">Comparision</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="bias.html">Bias</a>
+            <ul class="dropdown-menu">
+              <li><a href="bias_source.html">The Source of Bias</a></li>
+              <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+              <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="discovery.html">Discoveries</a>
+            <ul class="dropdown-menu">
+              <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+              <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+              <li><a href="discovery_3.html">Prompt Engineering</a></li>
+              <li><a href="discovery_4.html">Ideal</a></li>
+            </ul>
+          </li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <hr />
+
+      <article class="content">
+        <div class="two-column">
+          <div class="left-column">
+            <h2>Source of Bias</h2>
+            AI bias is not a glitch; it is the algorithmic reflection of human
+            history. This briefing outlines how societal prejudices are
+            digitized, amplified, and reinforced through the machine learning
+            lifecycle.
+
+            <br /><br />
+            <h2>1. AI as a Societal Mirror</h2>
+            <p>
+              Machine learning bias is not a random error; it is the
+              <strong
+                >mathematical projection of human cognitive and societal
+                biases</strong
+              >. As
+              <a
+                href="https://www.mdpi.com/2076-3417/11/14/6271"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >Alelyani (2021)</a
+              >
+              explains, models formalize latent social biases into explicit
+              algorithmic logic by internalizing unconscious prejudices from
+              historical data.
+            </p>
+            <p>
+              Harmful content can be filtered While structural biases still
+              exist. <br />Structural Bias: Naturally, data distribution look
+              like, such as the " male-to-female occupational ratio. "
+            </p>
+          </div>
+          <div class="right-column">
+            <div class="image-wrapper">
+              <img
+                src="./Images/sour_map.png"
+                alt="Bias Landscape Mapping"
+                class="bias-image"
+              />
+              <img
+                src="./Images/data_imbalance.png"
+                alt="Data Imbalance"
+                class="bias-image"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="content">
+        <div class="two-column">
+          <div class="left-column">
+            <h2>2. The Lifecycle of Bias: From Data to Decision</h2>
+            <p>
+              Bias is a systemic phenomenon driven by three fundamental forces
+              across the ML pipeline stages.
+            </p>
+
+            <h3>Phase I: Pre-processing (Data & Human Input)</h3>
+            <p>
+              <strong>Data Bias:</strong> Occurs when training samples are
+              non-representative or saturated with historical inequities.
+              Instead of predicting the future, the model automates and scales
+              the unfairness of the past
+              <a
+                href="https://www.semanticscholar.org/paper/The-Risk-of-Machine-Learning-Bias-(And-How-to-It)-DeBrusk-Wyman/51ff493e223bdedf0ceb48860a36c6beec1c5802"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >(DeBrusk, 2018)</a
+              >.
+            </p>
+
+            <p>
+              <strong>Human Influence:</strong> Developers' subconscious
+              preferences in feature selection often favor a narrow “ideal”
+              profile
+              <a
+                href="https://dokumen.pub/natural-language-processing-jacob-eisenstein.html"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >Eisenstein (2018)</a
+              >.
+            </p>
+
+            <h3>Phase II: In-processing (The Algorithmic Design)</h3>
+            <p>
+              <strong>Algorithmic Bias:</strong> Mathematical designs can
+              reinforce negative features. Optimization functions often overfit
+              on proxy variables (e.g., postal codes) even when explicit
+              sensitive variables are removed
+              <a
+                href="https://www.semanticscholar.org/paper/The-Risk-of-Machine-Learning-Bias-(And-How-to-It)-DeBrusk-Wyman/51ff493e223bdedf0ceb48860a36c6beec1c5802"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >(DeBrusk, 2018)</a
+              >.
+            </p>
+
+            <h3>Phase III: Post-processing (The Feedback Loop)</h3>
+            <p>
+              Biased outputs published online become training data for the next
+              generation, creating a self-reinforcing cycle of amplification
+              <a
+                href="https://compass.onlinelibrary.wiley.com/doi/10.1111/lnc3.12432"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >Hovy and Prabhumoye (2021)</a
+              >.
+            </p>
+          </div>
+          <div class="right-column">
+            <div class="image-wrapper">
+              <img
+                src="./Images/phrase.png"
+                alt="ML Bias Lifecycle"
+                class="bias-image"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="content">
+        <div class="two-column">
+          <div class="left-column">
+            <h2>3. Specialized Inequity in Multilingual LLMs & RAG</h2>
+            <p>
+              As models evolve, bias manifests through specific linguistic and
+              structural failures in Retrieval-Augmented Generation (RAG).
+            </p>
+
+            <h3>3.1 Dialectal Bias & Linguistic Erosion</h3>
+            <p>
+              The dominance of "Standard" languages in training corpora leads to
+              the marginalization of non-standard variants.
+              <a
+                href="https://link.springer.com/article/10.1007/s11704-024-40579-4"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >Xu et al. (2025)</a
+              >
+              note that MLLMs often fail to align the semantic space for
+              dialects, misinterpreting local syntax.
+            </p>
+
+            <h3>3.2 Writing Style Bias: The "Style Trap"</h3>
+            <p>
+              Research by
+              <a
+                href="https://dl.acm.org/doi/10.1145/3701551.3703514"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >Cao (2025)</a
+              >
+              identifies Linguistic Style Bias as a critical source of systemic
+              inequity:
+            </p>
+            <ul>
+              <li>
+                AI confuses "Standard" academic tone with higher quality,
+                systematically de-ranking informal or non-native (ESL) writing.
+              </li>
+              <li>
+                Accurate information is filtered out of RAG systems simply due
+                to non-standard expression, penalizing diverse sociolinguistic
+                identities.
+              </li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <div class="image-wrapper">
+              <img
+                src="./Images/mllms.png"
+                alt="Linguistic Inequity in NLP"
+                class="bias-image"
+              />
+            </div>
+
+            <div class="flat">
+              <a href="bias.html" class="explore-btn">&larr; Back To Intro</a>
+              <a href="bias_measurement.html" class="explore-btn"
+                >Go to measurement</a
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <hr />
+    </main>
+
+    <hr />
+    <footer>
+      <p>
+        &copy; CS1102 - Course Project - 2025/2026 Semester B
+        <br />Project Topic: LLM for Social Equity: Measuring and Reducing Bias
+        in Language <br />Chan Chak Wing;Chan Kwan To;Lo Wai Sum
+      </p>
+    </footer>
+  </body>
+</html>

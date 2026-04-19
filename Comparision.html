@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cityu.edu.hk/">
+                <img src="./Images/CityU_logo.svg.png" alt="CityU Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="genai.html">Generative AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genai1.html">AI Architecture</a></li>
+                        <li><a href="genai2.html">AI Train Flow</a></li>
+                        <li><a href="genai3.html">Foundation Model</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="NLP.html">Mechanism</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+                        <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+                        <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+                        <li><a href="NLP_LLM.html">Large Language Model</a></li>
+                        <li><a href="Comparision.html">Comparision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="bias.html">Bias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bias_source.html">The Source of Bias</a></li>
+                        <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+                        <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="discovery.html">Discoveries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+                        <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+                        <li><a href="discovery_3.html">Prompt Engineering</a></li>
+                        <li><a href="discovery_4.html">Ideal</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <main>
+
+        <hr>
+        <article class="content">
+            <div class="two-column">
+
+                <div class="left-column">
+                    <h2>Comparing Traditional vs. LLM-based Systems</h2>
+                    <p>
+                        To understand the evolution of social equity in computing,
+                        we compare <strong>Traditional Statistical Methods</strong>
+
+                        with <strong>Modern Large Language Models</strong>.
+                    </p>
+                    <h3>A. Information Retrieval Area</h3>
+                    <p>
+                        According to the randomized experiment by
+                        <a href="https://doi.org/10.48550/arXiv.2307.03744" target="_blank" rel="noopener"
+                            class="apa-citation">
+                            Spatharioti et al. (2023)</a>, the shift to LLM-based tools significantly impacts how
+                        information is retrieved and perceived.
+                    </p>
+                    <table style="width:100%; border-collapse: collapse; margin-bottom: 20px; border: 1px solid #ddd;">
+                        <thead>
+                            <tr style="background-color: #f2f2f2; text-align: left;">
+                                <th style="padding: 10px; border: 1px solid #ddd;">Performance Metric</th>
+                                <th style="padding: 10px; border: 1px solid #ddd;">Traditional Search</th>
+                                <th style="padding: 10px; border: 1px solid #ddd;">LLM-based Search</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Average Queries per
+                                        Task</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">Higher </td>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Significantly Fewer</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Query Type</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">Keyword Fragments</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Complex Natural
+                                        Language</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Completion Time</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">Baseline (Slower)</td>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Significantly Faster</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>User Reliance</strong></td>
+                                <td style="padding: 10px; border: 1px solid #ddd;">Skeptical / Independent verification
+                                </td>
+                                <td style="padding: 10px; border: 1px solid #ddd;"><strong>Overreliance</strong> (High
+                                    trust in direct answers)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+
+
+
+                        <strong>The more "user-friendly" technology becomes, the more "vulnerable" humanity's defenses
+                            against bias actually become.</strong>
+                        <br><br>
+
+                    <h3>1. A Qualitative Change in Query Behavior:</h3>
+                    <strong>In Traditional Search (Keyword Fragments):</strong>
+                    <br>
+                    Users are like "placing an order," entering "Hong Kong housing policy impact."
+                    <br>This forces the brain to maintain analytical thinking, expecting to see multiple links.
+                    <br><br>
+                    <strong>LLM Search (Natural Language): </strong>
+                    <br>Users are like "having a conversation," asking, "How will this policy affect me?".
+                    <br>This conversational interaction induces the brain to enter a "trust mode," viewing AI as a
+                    knowledgeable advisor rather than a cold, impersonal database.
+                    <br><br>
+
+                    <h3>2. The Synthesis Trap:</h3>
+
+                    <strong>Information Gatekeeper: </strong>
+                    <br>
+                    In the traditional model, the search engine is like a "librarian,"
+                    <br>Guiding you to different bookshelves.
+                    <br>In the LLM model, AI is the "sole author," directly reading the book and writing a summary for
+                    you.
+                    <br><br>
+                    <strong>Invisible Eradication: </strong>
+                    <br>If AI weighs information based on "frequency of occurrence" during synthesis,
+                    then the voices of minority groups (such as non-mainstream dialects, subcultural viewpoints, and
+                    non-mainstream academic claims) will be filtered out as "noise."
+                    <br><br>
+                    <h3>3. The Quantitative Threat of Overreliance:</h3>
+                    Research indicates that while LLM increases speed, users' sensitivity to misinformation decreases.
+                    <br>In a context of social equity,
+                    If AI provides career advice with gender or racial bias, users are highly likely to adopt it
+                    directly due to its authoritative tone and fluent synthesis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </p>
+
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/brain.png" alt="Search Behavior Change" class="bias-image">
+                        <img src="./Images/over.png" alt="Search Behavior Change" class="bias-image">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </article>
+
+
+
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>B. Semantic Analysis Area</h2>
+
+                    <h3>The "Paradigm Shift" of Bias: </h3>
+                    <p>Based on the research by
+                        <a href="https://doi.org/10.1007/978-981-96-6294-4_20" target="_blank" rel="noopener"
+                            class="apa-citation">Chuthamsatid et al. (2025)</a>
+                        <br> AI model biases have not vanished with technological progress.
+
+                        <br>Instead, they have evolved into deeper, structural issues that are harder to detect.
+                        <br>For example, In the past, we could easily detect AI making discriminatory remarks; now AI
+                        has learned to be "polite," but its underlying logic still contains a preference for specific
+                        ethnic groups.
+
+
+                        <br>Current technical evolution presents a dangerous trend: superficial fairness (<strong>Data
+                            Beautification</strong>) often masks underlying structural injustice.
+                        <br>Developers manually intervene to make the output appear correct, but this only addresses the
+                        downstream issue and does not resolve the uneven distribution of data upstream.
+
+                        <br><br>Modern language models exhibit bias patterns fundamentally different from traditional
+                        models:
+                    </p>
+
+                    <h5>Table 1: Bias Dimension Comparison</h5>
+                    <table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+                        <thead>
+                            <tr style="background-color: #f2f2f2;">
+                                <th style="padding: 8px; text-align: left;">Bias Dimension</th>
+                                <th style="padding: 8px; text-align: left;">Statistical Methods (GloVe)</th>
+                                <th style="padding: 8px; text-align: left;">Modern LLMs (OpenAI/Google)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 8px;"><strong>Gender Alignment</strong></td>
+                                <td style="padding: 8px;">Strong Male-skewed associations</td>
+                                <td style="padding: 8px;"><strong>Shifted</strong> (~60%+ Female-alignment)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;"><strong>Racial Bias (SC-WEAT)</strong></td>
+                                <td style="padding: 8px;">Co-occurrence based stereotypes</td>
+                                <td style="padding: 8px;"><strong>Structural Underrepresentation</strong> (e.g.,
+                                    Black-associated words)</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;"><strong>Thematic Clustering</strong></td>
+                                <td style="padding: 8px;">Static and explicit</td>
+                                <td style="padding: 8px;"><strong>Dynamic and hidden</strong> within high-dimensional
+                                    space</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li><strong>1. Gender Alignment Shift: "Over-correction"</strong>
+                            <ul>
+                                <li><strong>Phenomenon & Data:</strong> Modern models (e.g., OpenAI) show over 60%
+                                    Female-alignment.</li>
+                                <li><strong>Technical Essence:</strong> This is the result of human intervention (such
+                                    as RLHF/Fine-tuning) aimed at eliminating explicit biases like "male doctor/female
+                                    nurse." Developers injected massive amounts of alignment data for this purpose.</li>
+                                <li><strong>Fairness Risks:</strong> This "Data Beautification" may trigger new
+                                    imbalances. If over-corrected for political correctness, the model may lose accuracy
+                                    when processing real-world data involving biological differences (e.g., medical
+                                    advice).</li>
+                            </ul>
+                        </li>
+                        <p>
+                            <br> Reason:To avoid stereotypes like "male doctor/female nurse," engineers fed the model a
+                            large amount of data with "progressive value."
+                            <br>As a result, the model subconsciously over-biases towards women in neutral contexts in
+                            order to "safety."
+                        </p>
+                        <li><strong>2. Racial Bias: From "Stereotypes" to "Structural Underrepresentation"</strong>
+                            <ul>
+                                <li><strong>Comparison:</strong> In traditional models , bias is explicit and measurable
+                                    .
+                                    <br>In modern Large Language Models (LLMs), bias has turned implicit.
+                                </li>
+                                Previously, we could use mathematical formulas to directly calculate how close "Black
+                                names" and "negative words" were.
+                                <li><strong>Structural Underrepresentation:</strong>
+                                    <br>Models no longer directly produce discriminatory associations.
+                                    <br>Instead, the culture, dialects, or contexts of specific groups (e.g.,
+                                    Black-associated terms) are marginalized within the vector space.
+                                </li>
+                                AI doesn't "hate" anyone; it simply consider the minority as the "noise" in vector
+                                space.
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/min.png" alt="Difference between Language" class="bias-image">
+                        <img src="./Images/bea.png" alt="Data Imbalance" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h3> C. From small model to Large Model</h3>
+                    <h5>Table 2: Technical Evaluation: Transparency vs. High-Dimensional Black Box</h5>
+                    <table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+                        <thead>
+                            <tr style="background-color: #f2f2f2;">
+                                <th style="padding: 8px; text-align: left;">Evaluation Feature</th>
+                                <th style="padding: 8px; text-align: left;">Traditional Methods (GloVe/FastText)</th>
+                                <th style="padding: 8px; text-align: left;">Modern LLMs (Transformer-based)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 8px;"><strong>Dimension & Logic</strong></td>
+                                <td style="padding: 8px;">Low-dimensional (300D), relationships are linear.</td>
+                                <td style="padding: 8px;">Extremely high-dimensional (thousands of D), relationships are
+                                    non-linear and dynamic.</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;"><strong>Interpretability</strong></td>
+                                <td style="padding: 8px;">High. Distances can be directly calculated via cosine
+                                    similarity.</td>
+                                <td style="padding: 8px;">Low. Bias is hidden within multi-layer attention mechanisms.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;"><strong>Bias Manifestation</strong></td>
+                                <td style="padding: 8px;">Static Stereotypes.</td>
+                                <td style="padding: 8px;">Dynamic Structural Bias (Hidden Structural Bias).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Traditional models are like a straight line, where you can easily find the bias points; modern
+                        models are like a giant maze, with biases distributed in countless tiny details across thousands
+                        of dimensions.
+                    </p>
+
+                    <h3>Social Fairness Warning: The Injustice Hard to Audit</h3>
+                    <p>Technological progress has effectively "raised the threshold for discrimination," making unjust
+                        behavior harder to monitor and prosecute:</p>
+                    <ul>
+                        <li><strong>Audit Difficulty Skyrockets:</strong> In the past, simple scripts could prove bias.
+                            Now, bias is hidden in minute perturbations of high-dimensional vectors, rendering
+                            traditional auditing tools ineffective.</li>
+                        <li><strong>Misleading Data Beautification:</strong> Companies may use impressive "gender
+                            alignment rates" to claim model fairness while ignoring the fact that minority semantics are
+                            being "marginalized."</li>
+                        <li><strong>Invisible Erasure Effect:</strong> As AI becomes social infrastructure for hiring
+                            and loans, this "hidden injustice" causes marginalized groups to be excluded unknowingly.
+                            Because system answers appear "objective," victims find it difficult to even raise charges.
+                        </li>
+                    </ul>
+
+                    <h3>D. Core Conclusion</h3>
+                    <p>Technological progress has not eradicated injustice;
+                        it has made it <strong>"deeper" and "more concealed."</strong>
+                        <br>While pursuing LLM efficiency, it is necessary to develop fairness detection tools capable
+                        of diving into high-dimensional spaces to prevent AI from becoming an invisible machine that
+                        erases diversity.
+                    </p>
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/black.png" alt="BlackBox" class="bias-image">
+                        <img src="./Images/bias_detect.png" alt="Hard to Detect Bias" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &copy; CS1102 - Course Project - 2025/2026 Semester B
+            <br>Project Topic: LLM for Social Equity: Measuring and Reducing Bias in Language
+            <br>Chan Chak Wing;Chan Kwan To;Lo Wai Sum
+        </p>
+    </footer>
+</body>
+
+</html>

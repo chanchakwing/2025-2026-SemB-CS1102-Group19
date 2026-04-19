@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS1102 - LLM for Social Equity</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="https://www.cityu.edu.hk/">
+        <img src="./Images/CityU_logo.svg.png" alt="CityU Logo" />
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="genai.html">Generative AI</a>
+          <ul class="dropdown-menu">
+            <li><a href="genai1.html">AI Architecture</a></li>
+            <li><a href="genai2.html">AI Train Flow</a></li>
+            <li><a href="genai3.html">Foundation Model</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="NLP.html">Mechanism</a>
+          <ul class="dropdown-menu">
+            <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+            <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+            <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+            <li><a href="NLP_LLM.html">Large Language Model</a></li>
+            <li><a href="Comparision.html">Comparision</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="bias.html">Bias</a>
+          <ul class="dropdown-menu">
+            <li><a href="bias_source.html">The Source of Bias</a></li>
+            <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+            <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="discovery.html">Discoveries</a>
+          <ul class="dropdown-menu">
+            <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+            <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+            <li><a href="discovery_3.html">Prompt Engineering</a></li>
+            <li><a href="discovery_4.html">Ideal</a></li>
+          </ul>
+        </li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+  s
+
+  <main>
+    <section class="banner">
+      <div class="banner-text">
+        <h1>CS1102<br />Measuring and Reducing Bias in Language Models</h1>
+        <p>
+          Contributor: Chan Chak Wing(58705567); Chan Kwan To(58743930); Lo
+          Wai Sum(58740023)
+        </p>
+      </div>
+    </section>
+
+    <article class="content">
+      <div class="two-column">
+        <!-- Left column: Technologies -->
+        <div class="left-column">
+          <h2>Technologies Used in Our Website</h2>
+
+          <ul>
+            <li>
+              <strong>HTML5</strong>
+              <ul>
+                <li>
+                  Complete semantic markup using <code>&lt;header&gt;</code>,
+                  <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+                  <code>&lt;article&gt;</code>, and
+                  <code>&lt;footer&gt;</code> tags
+                </li>
+                <li>Two-column responsive layout built with CSS Grid</li>
+                <li>Dropdown navigation menus</li>
+                <li>
+                  Tables, images, hyperlinks, and proper citation formatting
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>CSS3</strong>
+              <ul>
+                <li>External modular stylesheet (<code>styles.css</code>)</li>
+                <li>CSS Grid and Flexbox for layout and alignment</li>
+                <li>Fixed sticky navigation bar with shadow effects</li>
+                <li>
+                  Fully responsive design (automatically adapts to mobile and
+                  tablet screens)
+                </li>
+                <li>
+                  Hover animations, button effects, and image scale/zoom
+                  transitions
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>JavaScript</strong>
+              <ul>
+                <li>
+                  Interactive Quiz System (<code>quiz_logic.js</code>)
+                  <ul>
+                    <li>
+                      9 multiple-choice questions with real-time scoring
+                    </li>
+                    <li>Progress bar, detailed feedback and explanations</li>
+                    <li>Previous / Next / Submit / Restart functionality</li>
+                  </ul>
+                </li>
+                <li>
+                  Dynamic Sitemap Generator (<code>sitemap.js</code>)
+                  <ul>
+                    <li>
+                      Automatically builds a tree-structured sitemap from JSON
+                      data
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Interactive dropdown menu behaviour for the main navigation
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right column: Image -->
+        <div class="right-column">
+          <div class="image-wrapper">
+            <img src="./Images/tasks.png" alt="task" class="bias-image" />
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="content">
+      <div class="two-column">
+        <div class="left-column">
+          <h2>
+            What if an AI manages the hiring process...<br />
+            ...and it is <span class="highlight">unfair</span>?
+          </h2>
+          <p>
+            In 2014, <strong>Amazon</strong> built an AI to find top talent.
+            By 2015, they realized the system had a dangerous flaw:
+            <strong>The system learned to penalize female candidates...</strong>
+            <a href="https://www.researchgate.net/publication/337331539_An_overview_of_ethical_issues_in_using_AI_systems_in_hiring_with_a_case_study_of_Amazon's_AI_based_hiring_tool"
+              target="_blank" rel="noopener" class="apa-citation">(Kodiyan, 2019)</a>.
+          </p>
+        </div>
+        <div class="right-column">
+          <div class="image-wrapper">
+            <img src="./Images/amazon_bias_case.png" alt="Amazon AI Hiring Bias Case" class="bias-image" />
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="content">
+      <div class="two-column">
+        <div class="left-column">
+          <div>
+            <h2>The Temptations and Traps of AI Recruiting</h2>
+            <p>
+              <strong>The Goal:</strong> Reducing the time cost of manually
+              screening thousands of resumes (Time-to-hire).<br />
+              <strong>The Mechanism:</strong> AI learning patterns from
+              successful applicants over the past 10 years.<br />
+              <strong>The Flaw:</strong> Because the tech industry has been
+              male-dominated for the past 10 years, AI incorrectly associates
+              "male traits" with "success."
+            </p>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="image-wrapper">
+            <img src="./Images/bias.png" alt="Visual representation of Bias" class="bias-image" />
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="content">
+      <div class="two-column">
+        <!-- Left column: Welcome & Guidance -->
+        <div class="left-column">
+          <h2>Welcome to LLM for Social Equity</h2>
+
+          <p>
+            <strong>Our website explores how Large Language Models (LLMs) can
+              unintentionally perpetuate bias — and how we can measure and
+              reduce it to create fairer AI systems.</strong>
+          </p>
+
+          <p>
+            Built as a CS1102 Group Project, this interactive educational
+            platform takes you on a complete journey from the foundations of
+            Generative AI to real-world bias in hiring, and finally to
+            practical solutions using prompt engineering.
+          </p>
+
+          <h3>What You Will Experience</h3>
+          <ul>
+            <li>
+              <strong>Clear, step-by-step learning</strong> — AI architecture,
+              NLP evolution, bias sources, measurement &amp; mitigation.
+            </li>
+            <li>
+              <strong>Real research discoveries</strong> — Our experiments on
+              gender bias, hiring fairness, and prompt engineering.
+            </li>
+            <li>
+              <strong>Interactive tools</strong> — Take the 9-question quiz
+              with instant scoring and feedback.
+            </li>
+            <li>
+              <strong>Easy navigation</strong> — Clean dropdown menus and
+              dynamic sitemap.
+            </li>
+          </ul>
+
+          <p>
+            <strong>How to explore:</strong> Use the top navigation bar to go
+            through Generative AI → Mechanism → Bias → Discoveries → Quiz.
+          </p>
+
+          <p>
+            <strong>Start your journey now and discover how we can build more
+              equitable AI for everyone.</strong>
+          </p>
+          <div>
+            <h3>Just to explore more about it!!</h3>
+            <a href="sitemap.html" class="explore-btn">Site Map</a>
+          </div>
+        </div>
+
+        <!-- Right column: Image -->
+        <div class="right-column">
+          <div class="image-wrapper">
+            <img src="./Images/social_equity.png" alt="Social Equity" class="bias-image" />
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <section class="references" style="padding: 20px; font-size: 0.9em; line-height: 1.6">
+      <hr />
+      <h2>References</h2>
+
+      <ol style="padding-left: 20px">
+        <li>
+          <strong>Alelyani, S.</strong> (2021). Detection and Evaluation of
+          Machine Learning Bias. <em>Applied Sciences</em>, 11(14), 6271.
+          <a href="https://doi.org/10.3390/app11146271 " target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.3390/app11146271</a>
+        </li>
+
+        <li>
+          <strong>Alfons, K., & A.</strong> (2019). An overview of ethical
+          issues in using AI systems in hiring with a case study of Amazon's
+          AI based hiring tool.
+          <a href="https://www.researchgate.net/publication/337331539_
+         An_overview_of_ethical_issues_in_using_AI_systems_in_hiring_
+         with_a_case_study_of_Amazon's_AI_based_hiring_tool" target="_blank" rel="noopener" class="apa-citation">
+            https://www.researchgate.net/publication/337331539_An_overview
+            _of_ethical_issues_in_using_AI_systems_in_hiring_with_a_case_study_of
+            _Amazon's_AI_based_hiring_tool</a>
+        </li>
+
+        <li>
+          <strong>Bai, X., Wang, A., Sucholutsky, I., & Griffiths, T. L.</strong>
+          (2024). Measuring implicit bias in explicitly unbiased large
+          language models. <em>arXiv preprint arXiv:2402.04105</em>.<a href="https://arxiv.org/abs/2402.04105"
+            target="_blank" rel="noopener" class="apa-citation">
+            https://arxiv.org/abs/2402.04105</a>
+        </li>
+
+        <li>
+          <strong>Bura, C., Myakala, P. K., & Jonnalgadda, A. K.</strong>
+          (2025). Ethical prompt engineering: addressing bias, transparency,
+          and fairness. <em>Int J Res Anal Rev (IJRAR)</em>, 12(1).
+          <a href="https://www.researchgate.net/publication/389819761_Ethical_Prompt
+         _Engineering_Addressing_BiasTransparency_and_Fairness" target="_blank" rel="noopener" class="apa-citation">
+            https://www.researchgate.net/publication/389819761_Ethical_
+            Prompt_Engineering_Addressing_BiasTransparency_and_Fairness</a>
+        </li>
+
+        <li>
+          <strong>Cao, H.</strong> (2025, March). Writing style matters: An
+          examination of bias and fairness in information retrieval systems.
+          In
+          <em>Proceedings of the Eighteenth ACM International Conference on Web
+            Search and Data Mining</em>
+          (pp. 336-344).
+          <a href="https://arxiv.org/abs/2411.13173" target="_blank" rel="noopener" class="apa-citation">
+            https://arxiv.org/abs/2411.13173</a>
+        </li>
+
+        <li>
+          <strong>Chuthamsatid, P., Potka, S., & Thomo, A.</strong> (2025).
+          Word Embedding Bias in Large Language Models. In
+          <em>Ubi-Media Computing, Pervasive Systems, Algorithms and
+            Networks</em>
+          (pp. 267–282). Springer.
+          <a href="https://doi.org/10.1007/978-981-96-6294-4_20" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.1007/978-981-96-6294-4_20</a>
+        </li>
+
+        <li>
+          <strong>DeBrusk, C., & Wyman, O.</strong> (2020). The Risk of
+          Machine Learning Bias (And How to Prevent It).
+          <a href="https://sloanreview.mit.edu/article/the-risk-of-machine-learning
+        -bias-and-how-to-prevent-it/" target="_blank" rel="noopener" class="apa-citation">
+            https://sloanreview.mit.edu/article/the-risk-of-machine-learning-bias-and-how-to-prevent-it/</a>
+        </li>
+
+        <li>
+          <strong>Eisenstein, J.</strong> (2018).
+          <em>Natural language processing</em>. Jacob Eisenstein, 507, 1220.
+          <a href="https://dokumen.pub/natural-language-processing-jacob-eisenstein.html" target="_blank" rel="noopener"
+            class="apa-citation">
+            https://dokumen.pub/natural-language-processing-jacob-eisenstein.html</a>
+        </li>
+
+        <li>
+          <strong>Hellström, T., Dignum, V., & Bensch, S.</strong> (2020).
+          Bias in machine learning: What is it good (and bad) for?
+          <em>arXiv</em>.
+          <a href="https://doi.org/10.48550/arXiv.2004.00686" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.48550/arXiv.2004.00686</a>
+        </li>
+
+        <li>
+          <strong>Ho, J. Q., Hartanto, A., Koh, A., & Majeed, N. M.</strong>
+          (2025). Gender biases within artificial intelligence and ChatGPT:
+          evidence, sources of biases and solutions.
+          <em>Computers in Human Behavior: Artificial Humans</em>, 4, 100145.
+          <a href="https://www.researchgate.net/publication/390145411
+            _Gender_Biases_within_Artificial_Intelligence_and_ChatGPT_Evidence
+            _Sources_of_Biases_and_Solutions" target="_blank" rel="noopener" class="apa-citation">
+            https://www.researchgate.net/publication/390145411_Gender_Biases_within_Artificial_Intelligence_and_ChatGPT_Evidence_Sources_of_Biases_and_Solutions</a>
+        </li>
+
+        <li>
+          <strong>Hovy, D., & Prabhumoye, S.</strong> (2021). Five sources of
+          bias in natural language processing.
+          <em>Language and Linguistics Compass</em>, e12432.
+          <a href="https://doi.org/10.1111/lnc3.12432" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.1111/lnc3.12432</a>
+        </li>
+
+        <li>
+          <strong>Ling, L.</strong> (2025).
+          <em>Investigating Social Bias in LLM-Generated Code</em>
+          (Doctoral dissertation, Concordia University).
+          <a href="https://ojs.aaai.org/index.php/AAAI/article/view/34961" target="_blank" rel="noopener"
+            class="apa-citation">
+            https://ojs.aaai.org/index.php/AAAI/article/view/34961</a>
+        </li>
+
+        <li>
+          <strong>Pauli, A. B., Barrett, M., Müller-Eberstein, M., Augenstein, I.,
+            & Assent, I. </strong>(2026).
+          <em>Analysing differences in persuasive language in LLM-generated
+            text: Uncovering stereotypical gender patterns</em>. arXiv.
+          <a href="https://doi.org/10.48550/arXiv.2601.05751" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.48550/arXiv.2601.05751</a>
+        </li>
+
+        <li>
+          <strong>Pawlik, L.</strong> (2025). How the choice of LLM and prompt
+          engineering affects Chatbot effectiveness. <em>Electronics</em>,
+          14(5), 888.
+          <a href="https://doi.org/10.3390/electronics14050888" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.3390/electronics14050888</a>
+        </li>
+
+        <li>
+          <strong>Spatharioti, S. E., Rothschild, D. M., Goldstein, D. G., &
+            Hofman, J. M.</strong>
+          (2023). Comparing traditional and LLM-based search for consumer
+          choice: A randomized experiment (arXiv:2307.03744v2).
+          <em>arXiv</em>.
+          <a href="https://doi.org/10.48550/arXiv.2307.03744" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.48550/arXiv.2307.03744</a>
+        </li>
+
+        <li>
+          <strong>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L.,
+            Gomez, A. N., Kaiser, Ł., & Polosukhin, I.</strong>
+          (2017). Attention is all you need. <em>arXiv</em>.
+          <a href="https://doi.org/10.48550/arXiv.1706.03762" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.48550/arXiv.1706.03762</a>
+        </li>
+
+        <li>
+          <strong>Wang, Z., Chu, Z., Doan, T. V., Ni, S., Yang, M., & Zhang,
+            W.</strong>
+          (2024). History, development, and principles of large language
+          models: an introductory survey. <em>AI and Ethics</em>, 5, 1955 -
+          1971.<a href="https://doi.org/10.1007/s43681-024-00583-7" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.1007/s43681-024-00583-7</a>
+        </li>
+
+        <li>
+          <strong>Xu, Y., Hu, L., Zhao, J., Qiu, Z., Xu, K., Ye, Y., & Gu,
+            H.</strong>
+          (2025). A survey on multilingual large language models: Corpora,
+          alignment, and bias. <em>Frontiers of Computer Science</em>, 19(11),
+          1911362.
+          <a href="https://doi.org/10.1007/s11704-024-40579-4" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.1007/s11704-024-40579-4</a>
+        </li>
+
+        <li>
+          <strong>Xu, Z., Chen, W., Tang, Y., Li, X., Hu, C., Chu, Z., ... & Lu,
+            Z.</strong>
+          (2025, April). Mitigating social bias in large language models: A
+          multi-objective approach within a multi-agent framework. In
+          <em>Proceedings of the AAAI Conference on Artificial Intelligence</em>
+          (Vol. 39, No. 24, pp. 25579-25587).
+          <a href="https://doi.org/10.48550/arXiv.2412.15504" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.48550/arXiv.2412.15504</a>
+        </li>
+
+        <li>
+          <strong>Zhao, J., Wang, T., Yatskar, M., Cotterell, R., Ordonez, V., &
+            Chang, K. W.</strong>
+          (2019, June). Gender bias in contextualized word embeddings. In
+          <em>Proceedings of the 2019 Conference of the North American Chapter
+            of the Association for Computational Linguistics: Human Language
+            Technologies</em>, Volume 1 (Long and Short Papers) (pp. 629-634).
+          <a href="https://doi.org/10.48550/arXiv.1904.03310" target="_blank" rel="noopener" class="apa-citation">
+            https://doi.org/10.48550/arXiv.1904.03310</a>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <hr />
+  <footer>
+    <p>
+      &copy; CS1102 - Course Project - 2025/2026 Semester B
+      <br />Project Topic: LLM for Social Equity: Measuring and Reducing Bias
+      in Language <br />Chan Chak Wing;Chan Kwan To;Lo Wai Sum
+    </p>
+  </footer>
+</body>
+
+</html>

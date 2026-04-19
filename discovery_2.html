@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cityu.edu.hk/">
+                <img src="./Images/CityU_logo.svg.png" alt="CityU Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="genai.html">Generative AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genai1.html">AI Architecture</a></li>
+                        <li><a href="genai2.html">AI Train Flow</a></li>
+                        <li><a href="genai3.html">Foundation Model</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="NLP.html">Mechanism</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+                        <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+                        <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+                        <li><a href="NLP_LLM.html">Large Language Model</a></li>
+                        <li><a href="Comparision.html">Comparision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="bias.html">Bias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bias_source.html">The Source of Bias</a></li>
+                        <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+                        <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="discovery.html">Discoveries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+                        <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+                        <li><a href="discovery_3.html">Prompt Engineering</a></li>
+                        <li><a href="discovery_4.html">Ideal</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>Testing Social Neutrality in LLM-Driven Recruitment</h2>
+                    An empirical study revealing that modern frontier LLMs maintain absolute scoring consistency across
+                    diverse social identities, effectively eliminating explicit bias.
+                    <h3>1. Hypotheses</h3>
+                    <p>
+                        <b>H1 (Primary):</b> When evaluating candidates with identical professional qualifications,
+                        Large Language Models (LLMs) will exhibit score variances based on social attributes (e.g.,
+                        ethnicity, gender, and native language).
+                    </p>
+                    <p>
+                        <b>H2 (Secondary):</b> LLMs will demonstrate a "Linguistic & Racial Penalty" against non-native
+                        English speakers or candidates with minority-associated names, even when technical skills are
+                        constant.
+                    </p>
+
+                    <table
+                        style="width:100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; border: 1px solid #ddd;">
+                        <thead>
+                            <tr style="background-color: #f2f2f2; text-align: left;">
+                                <th style="padding: 8px; border: 1px solid #ddd;">Variable Type</th>
+                                <th style="padding: 8px; border: 1px solid #ddd;">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Constants</td>
+                                <td style="padding: 8px; border: 1px solid #ddd;">CityU BBA IM, 2 years exp,
+                                    Python/SQL/n8n, 15% efficiency gain</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Independent</td>
+                                <td style="padding: 8px; border: 1px solid #ddd;">Name, Gender Label, Ethnicity Label,
+                                    Linguistic Background</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/recuitment.png" alt="Recruitment Process" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h3>2. Experimental Design</h3>
+                    <p>
+                        <b>Methodology:</b> Standardized resumes were generated via a Python script (CSV format) and fed
+                        into the LLM with a prompt requiring structured JSON output containing precise scores (1-10) and
+                        qualitative reasoning.
+                    </p>
+                    <p>
+                        <b>Testing Environment:</b> Zero-shot scoring conducted via <b>DeepSeek-V3</b> and other SOTA
+                        LLMs.
+                    </p>
+                    <p>
+                        <b>Controlled Variable Method:</b> We utilized 10 distinct samples to ensure the independent
+                        variables were the only points of differentiation.
+                    </p>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/resume_prompt.png" alt="Experimental Design Flow" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h3>3. Key Findings</h3>
+                    <p>
+                        <b>Numerical Consistency:</b> All 10 candidates received an identical score of <b>8.0/10</b>,
+                        demonstrating absolute statistical uniformity.
+                    </p>
+                    <p>
+                        <b>Qualitative Evidence:</b> The LLM's reasoning consistently featured phrases such as:
+                    <ul>
+                        <li>"No reason to differentiate"</li>
+                        <li>"Based strictly on technical merit"</li>
+                        <li>"No bias applied"</li>
+                    </ul>
+                    </p>
+                    <p>
+                        <b>Critical Observation:</b> The model exhibited robust <b>"Self-Correction"</b> capabilities,
+                        actively neutralizing latent bias-inducing prompts.
+                    </p>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/resume_grade.png" alt="Key Result Visualization" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h3>4. Conclusion & Discovery</h3>
+                    <strong>Standardized Fairness: </strong>
+                    <br>Modern models like DeepSeek-V3 demonstrate statistical consistency (all candidates scored
+                    8.0/10). RLHF and Safety Alignment have effectively turned "neutrality" into a built-in feature,
+                    successfully filtering explicit social labels.
+                    <br><br><strong>Superior Objectivity:</strong>
+                    <br>AI can achieve a strict meritocracy that human recruiters often struggle with. By ignoring the
+                    "halo effect" and focusing solely on technical metrics (e.g., Python skills), AI minimizes
+                    subjective interference.
+                    <br><br><strong>Prompt Engineering: </strong>
+                    <br>Prompt Engineering is a vital gatekeeper. Precise constraints force the AI to remain
+                    quantifiable and evidence-based, ensuring a more impartial screening process.
+
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/eyes.png" alt="Final Conclusion" class="bias-image">
+                    </div>
+                    <div class="flat">
+                        <a href="discovery_1.html" class="explore-btn">&larr;Back to Gender Bias</a>
+                        <a href="discovery_3.html" class="explore-btn">Go to Prompt Engineering &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            &copy; CS1102 - Course Project - 2025/2026 Semester B
+            <br>Project Topic: LLM for Social Equity: Measuring and Reducing Bias in Language
+            <br>Chan Chak Wing; Chan Kwan To; Lo Wai Sum
+        </p>
+    </footer>
+</body>
+
+</html>

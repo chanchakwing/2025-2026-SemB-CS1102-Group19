@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cityu.edu.hk/">
+                <img src="./Images/CityU_logo.svg.png" alt="CityU Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="genai.html">Generative AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genai1.html">AI Architecture</a></li>
+                        <li><a href="genai2.html">AI Train Flow</a></li>
+                        <li><a href="genai3.html">Foundation Model</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="NLP.html">Mechanism</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+                        <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+                        <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+                        <li><a href="NLP_LLM.html">Large Language Model</a></li>
+                        <li><a href="Comparision.html">Comparision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="bias.html">Bias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bias_source.html">The Source of Bias</a></li>
+                        <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+                        <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="discovery.html">Discoveries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+                        <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+                        <li><a href="discovery_3.html">Prompt Engineering</a></li>
+                        <li><a href="discovery_4.html">Ideal</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+        <hr>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>What are Foundation Models?</h2>
+                    <p>Generative AI is built upon massive deep learning structures known as <strong>Foundation
+                            Models</strong>. These represent a paradigm shift in how AI systems are developed and
+                        deployed.</p>
+
+                    <h3>Key Characteristics:</h3>
+                    <ul>
+                        <li><strong>Scale:</strong> These models feature an immense number of parameters, allowing them
+                            to capture complex nuances in data.</li>
+                        <li><strong>Pre-training:</strong> They are trained on a vast and diverse range of datasets
+                            (text, images, code) before being specialized for specific tasks.</li>
+                        <li><strong>Versatility:</strong> A single foundation model can be adapted to power various
+                            applications, from translation and creative writing to image synthesis and data analysis.
+                        </li>
+                    </ul>
+
+
+
+                    <p>In essence, a Foundation Model acts as a "central brain" that provides a base of knowledge and
+                        capability, which can then be fine-tuned for social equity, technical precision, or creative
+                        expression.</p>
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/AI.png" alt="Foundation Model Construction" class="bias-image">
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>Descriptive Truth</h2>
+                    <p>Foundation Model produce to descriptive truth, which is statistical belief, It doesn't express
+                        "correctness," but rather"the status quo." It honestly reflects the statistical frequency of
+                        human behavior in online data.
+                        <br><br>Without Socialization：It doesn't understand "Social Hehavior Norms,
+                        "it only understands" statistical correlation.
+                    </p>
+
+
+
+
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/hurt.png" alt="AI to honest to hurt my feelings" class="bias-image">
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>FROM DESCRIPTIVE TRUTH TO NORMATIVE TRUTH</h2>
+                    <p>Public Relationship Disaster:
+                        Violation in Political Correctness, AI Firm will be banned to operate.
+                    </p>
+                    <p>
+                        To avoid violate in the following aspects, the model need to be aligned with the society's
+                        expectation and value.
+                    </p>
+                    <ul>
+
+                        <li>Political Correctness</li>
+                        <li>Law & Regulation</li>
+                        <li>DEI Principle: Stands for Diversity, Equity, and Inclusion</li>
+                        <li>Society Value & Norm</li>
+                    </ul>
+
+
+
+
+
+
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/task_ali.png" alt="Task Alignment Process" class="bias-image">
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>Post training</h2>
+                    <p>To adjust the bias learn from data, make its output fulfill the society's expectation and value.
+
+                    <ul>
+                        <li>SFT (Small Instruction Finite Adjustment): Transforms the pre-trained model from a "word
+                            chain" into an "instruction executor." Its core lies in data quality, establishing a
+                            baseline strategy through a small number of high-quality expert dialogues.</li>
+
+                        <li>RLHF (Reinforcement Learning): Endows the model with social emotional intelligence. It uses
+                            reward models to simulate human ratings and directly optimizes preferences through
+                            algorithms such as DPO, making the answers closer to human responses.</li>
+
+                        <li>Ethical Challenges: Faces the trade-off of 3H (usefulness, honesty, harmlessness).
+                            Over-alignment can lead to "rejection bias" or even an "alignment tax," thereby reducing
+                            logical ability.</li>
+
+                        <li>Continuous Safety: The risk of "forgetting" must be addressed after deployment. Anthropic's
+                            constitutional AI provides a constitutional solution for large-scale automated alignment by
+                            having AI supervise AI.</li>
+
+                        <li>Output Guardrails:
+                            A monitoring and filtering system. This provides a final
+                            check before the answer is sent to the user.
+                            If it detects harmful content
+                            such as hate speech, pornography, violence,
+                            It immediately blocks it and replaces the answer with a
+                            standard rejection message</li>
+                    </ul>
+
+
+                    <br><br> It help AI learn to navigate sensitive topics with tact and disclaimers to ensure
+                    corporate survival and public acceptance
+
+
+                    </p>
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/post_train.png" alt="Post-Training Process" class="bias-image">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </article>
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>Alignment Tax</h2>
+                    <p>
+                        The Cost of Forced Alignment: Alignment Tax
+                        <br>Force models to strictly adhere to PC, DEI, Social
+                        Norms, or other matters.
+                        <br>Leads to
+                        '
+                        over-refusal'
+                        or evasive, roundabout
+                        behaviors.
+                        <br>Compromise the model’
+                        s objective reasoning and
+                        its ability to present raw factual truths.
+                    </p>
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/post_train.png" alt="Post-Training Process" class="bias-image">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </article>
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>Why Need to Align the Foundation Models</h2>
+                    <H3>Representation Issue: Cyber Place</H3>
+                    <p>
+                        Not total proportional mirroring the reality.
+                        <br>When AI firm scrapes data from the internet, it is not reading
+                        "the
+                        thoughts of all humanity,
+                        " but rather reading the traces left by
+                        "the
+                        most talkative people.
+                        "
+                        <br>
+                    <ul>
+                        <li>Talkative people</li>
+                        <li>Speaker of major language（Chinese, English）</li>
+                        <li>Young People, Urbanites..</li>
+                    </ul>
+                    Have higher weight in the dataset than other groups.
+                    <ul>
+                        <li>Non-Talkative people:</li>
+                        <li>Speakers of minority languages</li>
+                        <li>The Elderly</li>
+                    </ul>
+                    Almost "invisible" in the dataset, pose to cognitive blind spots as the insufficient sample size.
+                    </p>
+                    <h3>Representation Issue: The Spiral of Silence</h3>
+                    <p>
+                        Self-censorship: People affraid to state
+                        different opinion against with Mainstream
+                        viewpoint, as they may be attacted.
+                        <br><br>Data contamination: The
+                        "
+                        statistical patterns
+                        "
+                        learned by AI are often only the loudest and
+                        most radical voices. If a bias is repeated ten
+                        thousand times online, even if it is wrong, AI
+                        will consider it a
+                        "high-probability truth.
+                        "
+                    </p>
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/representation_1.png" alt="Representation Issues in Foundation Models" class="bias-image">
+                        <img src="./Images/representation_2.png" alt="Representation Issues in Foundation Models" class="bias-image">
+
+                    </div>
+                    <div class="flat">
+                        <a href="genai2.html" class="explore-btn">&larr;Back to Train Flow </a>
+                        <a href="genai3.html" class="explore-btn">Refresh the page</a>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+
+
+
+
+
+
+
+        <hr>
+    </main>
+
+    <hr>
+    <footer>
+        <p>
+            &copy; CS1102 - Course Project - 2025/2026 Semester B
+            <br>Project Topic: LLM for Social Equity: Measuring and Reducing Bias in Language
+            <br>Chan Chak Wing;Chan Kwan To;Lo Wai Sum
+        </p>
+    </footer>
+</body>
+
+</html>

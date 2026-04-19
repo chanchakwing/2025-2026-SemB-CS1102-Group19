@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cityu.edu.hk/">
+                <img src="./Images/CityU_logo.svg.png" alt="CityU Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="genai.html">Generative AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genai1.html">AI Architecture</a></li>
+                        <li><a href="genai2.html">AI Train Flow</a></li>
+                        <li><a href="genai3.html">Foundation Model</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="NLP.html">Mechanism</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+                        <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+                        <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+                        <li><a href="NLP_LLM.html">Large Language Model</a></li>
+                        <li><a href="Comparision.html">Comparision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="bias.html">Bias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bias_source.html">The Source of Bias</a></li>
+                        <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+                        <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="discovery.html">Discoveries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+                        <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+                        <li><a href="discovery_3.html">Prompt Engineering</a></li>
+                        <li><a href="discovery_4.html">Ideal</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+
+
+
+        <hr>
+        <article class="content">
+            <div class="two-column">
+
+                <div class="left-column">
+                    <h2>Statistical Language Model (SLM)</h2>
+
+                    <p> Refer to the Research Team, <a href="https://doi.org/10.1007/s43681-024-00583-7" target="_blank"
+                            rel="noopener" class="apa-citation">
+                            Wang et al. (2024)
+                        </a>state that
+                        The journey began with models like N-gram.
+
+                        These models operate based on massive amounts of historical data provided by humans.
+                        <br>
+                        <br><strong>Mechanism: </strong>It relies on Next Word Prediction based purely on probability.
+                        By looking at historical records and Part of Speech (POS), the computer determines which word is
+                        most likely to follow the current sequence.
+                        <br>
+                        <br><strong>Limitation: </strong>The computer does not understand the semantic meaning of words;
+                        it is essentially a "stochastic parrot" counting occurrences.
+                        <br>
+                        <br><strong>Social Equity Insight:</strong> Biases in SLMs are Explicit. If a dataset contains
+                        80% "He" following "Doctor," the model simply mirrors this statistical imbalance
+
+
+
+                    </p>
+
+
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/slm.png" alt="Statistical Language Model Architecture" class="bias-image">
+                    </div>
+                    <div class="flat">
+                        <a href="NLP.html" class="explore-btn">&larr; Back To NLP</a>
+                        <a href="NLP_NLM.html" class="explore-btn">Go to NLM &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+        <hr>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; CS1102 - Course Project - 2025/2026 Semester B
+            <br>Project Topic: LLM for Social Equity: Measuring and Reducing Bias in Language
+            <br>Chan Chak Wing;Chan Kwan To;Lo Wai Sum
+        </p>
+    </footer>
+</body>
+
+</html>

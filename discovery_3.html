@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cityu.edu.hk/">
+                <img src="./Images/CityU_logo.svg.png" alt="CityU Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="genai.html">Generative AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genai1.html">AI Architecture</a></li>
+                        <li><a href="genai2.html">AI Train Flow</a></li>
+                        <li><a href="genai3.html">Foundation Model</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="NLP.html">Mechanism</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+                        <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+                        <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+                        <li><a href="NLP_LLM.html">Large Language Model</a></li>
+                        <li><a href="Comparision.html">Comparision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="bias.html">Bias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bias_source.html">The Source of Bias</a></li>
+                        <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+                        <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="discovery.html">Discoveries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+                        <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+                        <li><a href="discovery_3.html">Prompt Engineering</a></li>
+                        <li><a href="discovery_4.html">Ideal</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>s
+
+
+    <main>
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>LLM Application: Constructing an "Ethical Layer" via Prompt Engineering</h2>
+                    <p>
+                        After Studying the paper including
+                        <a href="https://www.mdpi.com/2079-9292/14/5/888" target="_blank" rel="noopener"
+                            class="apa-citation">
+                            (Pawlik, 2025) </a> and
+                        <a href="https://www.researchgate.net/publication/389819761_Ethical_Prompt_Engineering_Addressing_BiasTransparency_and_Fairness"
+                            target="_blank" rel="noopener" class="apa-citation">
+                            (Bura et al., 2025)</a>
+                        Try to utilizing structured <b>Prompt Engineering</b> techniques to establish a technical
+                        "Ethical Layer" at the application level. This layer automatically filters model biases and
+                        ensures social equity in all decision-making outputs.
+                    </p>
+                    <h3>1. Key Technical Layers: Bias Mitigation Strategies</h3>
+                    <p>In production environments, developers can flexibly deploy three primary prompting techniques to
+                        fortify system fairness:</p>
+
+                    <table
+                        style="width:100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; border: 1px solid #ddd;">
+                        <thead>
+                            <tr style="background-color: #f2f2f2; text-align: left;">
+                                <th style="padding: 8px; border: 1px solid #ddd;">Technique</th>
+
+                                <th style="padding: 8px; border: 1px solid #ddd;">Core Advantage </th>
+
+                                <th style="padding: 8px; border: 1px solid #ddd;">Illustrative Example</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Adversarial</td>
+
+                                <td style="padding: 8px; border: 1px solid #ddd;">Highest efficacy; forces self-audit.
+                                </td>
+
+                                <td style="padding: 8px; border: 1px solid #ddd;">"Review your previous response for any
+                                    hidden gender bias and provide a neutral revision."</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Role-based (DE&I)
+                                </td>
+
+                                <td style="padding: 8px; border: 1px solid #ddd;">Most practical for system prompts.
+                                </td>
+
+                                <td style="padding: 8px; border: 1px solid #ddd;">"Act as a DE&I consultant to ensure
+                                    this recruitment ad uses inclusive language for all cultures."</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Chain-of-Thought
+                                </td>
+
+                                <td style="padding: 8px; border: 1px solid #ddd;">Highest transparency; traces
+                                    rationale.</td>
+
+                                <td style="padding: 8px; border: 1px solid #ddd;">"List your evaluation criteria
+                                    step-by-step and explain how each ensures fairness before deciding."</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/llm_app.png" alt="Bias Mitigation Efficiency" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h3>2. Adoption in Hong Kong context </h3>
+                    <p>
+                        <b>Semantic Equity for Mixed-code:</b> Developing prompts to accurately parse "Chinglish" or
+                        Cantonese-English mixtures. This ensures AI identifies professional merit without penalizing
+                        candidates for non-standard linguistic habits common in Hong Kong.
+                    </p>
+                    <p>
+                        <b>Hong Kong Proprietary AI Prompts:</b> A strategic asset involving industry terminology
+                        alignment (e.g., differentiating Casual/Freelance vs. Contract) and local qualification
+                        weighting (DSE/HKCEE).
+                    </p>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/hk_prom.png" alt="Hong Kong Market Localization" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h3>3. Application</h3>
+                    <p>
+                        Here are the three techniques for addressing bias and social equity, specifically tailored for
+                        the Hong Kong professional context:
+                        <br><br>
+                    <h4>1. Adversarial Prompting</h4><br>
+
+                    <strong>Prompt:</strong>
+                    <br>
+                    "The Executive Assistant (EA) job description you drafted is problematic. Please act as an EOC
+                    (Equal Opportunities Commission) Legal Consultant. Identify any unfair biases like 'pleasant
+                    appearance' or 'young and energetic' that imply gender or age discrimination. Rewrite the wording to
+                    be strictly professional and gender-neutral."
+                    <br><br><strong>Effect: </strong>
+                    <br>It prevents the "EA" role from being stereotyped as a position only for young women, shifting
+                    the focus to "Professional demeanor and communication skills."
+
+                    <br><br>
+                    <h4>2. Role-based Prompting</h4><br>
+                    <strong>Prompt:</strong><br>
+                    "You are a Progressive HK HR Director who champions family-friendly workplaces. Write an internal
+                    email encouraging male staff to take their full Paternity Leave. Your stance is that caregiving is a
+                    shared responsibility, not just a 'woman's job.' Ensure the tone is supportive and avoids the
+                    'traditional breadwinner' stereotype."
+                    <br><br><strong>Effect: </strong>
+                    <br>It fosters a modern corporate culture in HK, explicitly stating that taking leave will not
+                    negatively impact one's Appraisal.
+
+                    <br><br>
+                    <h4>3. Chain-of-Thought (CoT) Prompting</h4><br>
+                    <strong>Prompt:</strong><br>
+                    "I have candidates from 'Big 3' (HKU, CUHK, UST) and non-prestigious schools.
+                    <br>Before recommending, think step-by-step:
+                    <br>1. List the core Technical Skills required (e.g., n8n, Python).
+                    <br>2. Analyze if 'University Brand' actually correlates with these specific tasks.
+                    <br>3. Check if you are ignoring practical project experience due to the 'Brand Name Effect' common
+                    in HK society."
+                    <br><br><strong>Effect: </strong>
+                    <br>It breaks the local "prestige bias," ensuring that candidates with hands-on technical experience
+                    (like Supabase or RAG) are not overlooked for a famous school name.
+
+                    </p>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/nurse.png" alt="Prompt Comparison" class="bias-image">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h3>4. Conclusion and Discovery: Application-First Governance</h3>
+                    <ul>
+                        <li><b>Technology as Mechanism:</b> Prompt engineering is a technical defense for <b>Social
+                                Equity</b>, not just performance.</li>
+                        <li><b>Workflow Impact:</b> While models have latent biases, the <i>application workflow</i>
+                            determines the final social consequence.</li>
+
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/social.png" alt="Final Ethical Architecture" class="bias-image">
+                    </div>
+                    <div class="flat">
+                        <a href="discovery_2.html" class="explore-btn">&larr;Back to LLM in Hiring</a>
+                        <a href="discovery_4.html" class="explore-btn">Go to ideal</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            &copy; CS1102 - Course Project - 2025/2026 Semester B
+            <br>Project Topic: LLM for Social Equity: Measuring and Reducing Bias in Language
+            <br>Chan Chak Wing; Chan Kwan To; Lo Wai Sum
+        </p>
+    </footer>
+</body>
+
+</html>

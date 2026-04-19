@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cityu.edu.hk/">
+                <img src="./Images/CityU_logo.svg.png" alt="CityU Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="genai.html">Generative AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genai1.html">AI Architecture</a></li>
+                        <li><a href="genai2.html">AI Train Flow</a></li>
+                        <li><a href="genai3.html">Foundation Model</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="NLP.html">Mechanism</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+                        <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+                        <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+                        <li><a href="NLP_LLM.html">Large Language Model</a></li>
+                        <li><a href="Comparision.html">Comparision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="bias.html">Bias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bias_source.html">The Source of Bias</a></li>
+                        <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+                        <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="discovery.html">Discoveries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+                        <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+                        <li><a href="discovery_3.html">Prompt Engineering</a></li>
+                        <li><a href="discovery_4.html">Ideal</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+
+
+
+        <hr>
+        <article class="content">
+            <div class="two-column">
+
+                <div class="left-column">
+                    <h2>Neural Language Model (NLM)</h2>
+
+                    <p>
+                        Refer to the Research Team, <a href="https://doi.org/10.1007/s43681-024-00583-7" target="_blank"
+                            rel="noopener" class="apa-citation">
+                            Wang et al. (2024)
+                        </a>state that
+                        The introduction of Deep Learning (RNN, LSTM) shifted the paradigm.
+                        <br>
+                        <br><strong>Mechanism: </strong>NLM uses Word Embeddings to reflect words into a
+                        high-dimensional semantic vector space. The position of a word in this space is determined by
+                        its context and usage in history.
+                        <br>
+                        <br><strong>Core Concept:</strong> The closer two words are in this vector space, the more
+                        related they are. This allowed computers to finally "understand" meaning through mathematical
+                        distance.
+                        <br>
+                        <br><strong>Social Equity Insight: </strong> become Associative. Stereotypes are hidden in the
+                        geometry of the vector space (e.g., the vector for "homemaker" being closer to "woman" than
+                        "man")
+
+
+
+
+                    </p>
+
+
+
+
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/nlm.png" alt="Vector Space Representation in NLM" class="bias-image">
+
+                    </div>
+                    <div class="flat">
+                        <a href="NLP_SLM.html" class="explore-btn">&larr; Back To NLM</a>
+                        <a href="NLP_PLM.html" class="explore-btn">Go to PLM &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+        <hr>
+        <!-- Group Members Section - Article Style -->
+
+    </main>
+    <footer>
+        <p>
+            &copy; CS1102 - Course Project - 2025/2026 Semester B
+            <br>Project Topic: LLM for Social Equity: Measuring and Reducing Bias in Language
+            <br>Chan Chak Wing;Chan Kwan To;Lo Wai Sum
+        </p>
+    </footer>
+</body>
+
+</html>

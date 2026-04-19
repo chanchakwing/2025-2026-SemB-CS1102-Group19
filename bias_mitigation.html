@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="https://www.cityu.edu.hk/">
+          <img src="./Images/CityU_logo.svg.png" alt="CityU Logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="genai.html">Generative AI</a>
+            <ul class="dropdown-menu">
+              <li><a href="genai1.html">AI Architecture</a></li>
+              <li><a href="genai2.html">AI Train Flow</a></li>
+              <li><a href="genai3.html">Foundation Model</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="NLP.html">Mechanism</a>
+            <ul class="dropdown-menu">
+              <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+              <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+              <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+              <li><a href="NLP_LLM.html">Large Language Model</a></li>
+              <li><a href="Comparision.html">Comparision</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="bias.html">Bias</a>
+            <ul class="dropdown-menu">
+              <li><a href="bias_source.html">The Source of Bias</a></li>
+              <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+              <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="discovery.html">Discoveries</a>
+            <ul class="dropdown-menu">
+              <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+              <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+              <li><a href="discovery_3.html">Prompt Engineering</a></li>
+              <li><a href="discovery_4.html">Ideal</a></li>
+            </ul>
+          </li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article class="content">
+        <div class="two-column">
+          <div class="left-column">
+            <h2>Bias Mitigation</h2>
+            Mitigation involves technical data augmentation, model-tier fairness
+            constraints, governance auditing, and inference-time solutions like
+            prompt engineering and multi-agent frameworks.
+            <br /><br />
+
+            <h2>1. Fundamental Technical Interventions</h2>
+            <p>
+              Identifying bias is only the first step; technical intervention is
+              required to ensure equity. According to
+              <a
+                href="https://aclanthology.org/N19-1064/"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >Zhao et al. (2019)</a
+              >, two primary methods effectively reduce systemic bias:
+            </p>
+
+            <ul>
+              <li>
+                <strong>Data Augmentation (CDA):</strong> Balancing training
+                sets by swapping gendered terms (e.g., changing "he" to "she").
+                This prevents the model from associating specific roles with a
+                single gender.
+              </li>
+              <li>
+                <strong>Neutralization (Debiasing):</strong> A mathematical
+                intervention in Word Embedding space to remove "gender
+                directions" from neutral words like "doctor" or "manager"
+                without full retraining.
+              </li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <div class="image-wrapper">
+              <img
+                src="./Images/intervent.png"
+                alt="AI Bias Mitigation Strategies"
+                class="bias-image"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="content">
+        <div class="two-column">
+          <div class="left-column">
+            <h2>2. A Three-Tier Strategy for Social Equity</h2>
+            <p>
+              To move beyond simple fixes,
+              <a
+                href="https://www.researchgate.net/publication/390145411_Gender_Biases_within_Artificial_Intelligence_and_ChatGPT_Evidence_Sources_of_Biases_and_Solutions"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >Ho et al. (2025)</a
+              >
+              propose a comprehensive framework:
+            </p>
+
+            <ol>
+              <li>
+                <strong>Data Tier:</strong> Implementing strategic augmentation
+                to ensure equitable representation across all contexts.
+              </li>
+              <li>
+                <strong>Model Tier:</strong> Integrating
+                <strong>Fairness Constraints</strong> into loss functions to
+                minimize reliance on sensitive demographic variables.
+              </li>
+              <li>
+                <strong>Governance Tier:</strong> Establishing rigorous
+                <strong>Algorithmic Auditing</strong> and human-machine
+                collaboration to hold systems accountable
+                <a
+                  href="https://www.researchgate.net/publication/337331539_An_overview_of_ethical_issues_in_using_AI_systems_in_hiring_with_a_case_study_of_Amazon's_AI_based_hiring_tool"
+                  target="_blank"
+                  rel="noopener"
+                  class="apa-citation"
+                  >(Kodiyan, 2019)</a
+                >.
+              </li>
+            </ol>
+          </div>
+          <div class="right-column">
+            <div class="image-wrapper">
+              <img
+                src="./Images/three.png"
+                alt="Governance and Auditing"
+                class="bias-image"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="content">
+        <div class="two-column">
+          <div class="left-column">
+            <h2>3. Low-Cost Inference-Time Solutions</h2>
+            <p>
+              Beyond retraining, strategic interaction can significantly lower
+              bias. Research by
+              <a
+                href="https://ojs.aaai.org/index.php/AAAI/article/view/34961"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >Ling et al. (2025)</a
+              >
+              explores Prompt Engineering:
+            </p>
+            <ul>
+              <li>
+                <strong>Chain-of-Thought (CoT):</strong> Encouraging "fairness
+                logic" step-by-step processing.
+              </li>
+              <li>
+                <strong>Positive Role-playing:</strong> Instructing the model to
+                adopt an ethical persona to reduce stereotypical outputs.
+              </li>
+              <li>
+                <strong>System Prompt Intervention:</strong> Declaring explicit
+                egalitarian beliefs (e.g., "I treat all races equally") acts as
+                a powerful baseline defense
+                <a
+                  href="https://arxiv.org/abs/2402.04105"
+                  target="_blank"
+                  rel="noopener"
+                  class="apa-citation"
+                  >(Bai et al., 2024)</a
+                >.
+              </li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <div class="image-wrapper">
+              <img
+                src="./Images/guard.png"
+                alt="Prompt Engineering and Auditing"
+                class="bias-image"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="content">
+        <div class="two-column">
+          <div class="left-column">
+            <h2>4. MOMA: Multi-Agent Framework for Mitigation</h2>
+            <p>
+              Research by
+              <a
+                href="https://ojs.aaai.org/index.php/AAAI/article/view/34748"
+                target="_blank"
+                rel="noopener"
+                class="apa-citation"
+                >Xu et al. (2025)</a
+              >
+              introduces <strong>MOMA</strong>, which solves the trade-off
+              between Fairness and Utility:
+            </p>
+            <ul>
+              <li>
+                <strong>Bias Identification Agent:</strong> Scans inputs for
+                sensitive triggers.
+              </li>
+              <li>
+                <strong>Causal Intervention Agent:</strong> Breaks the "shortcut
+                connection" between identity markers and stereotypes using
+                causal inference.
+              </li>
+              <li>
+                <strong>Answer Fusion Agent:</strong> Ensures the final output
+                is both factually accurate and socially equitable.
+              </li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <div class="image-wrapper">
+              <img
+                src="./Images/filter.png"
+                alt="MOMA Framework"
+                class="bias-image"
+              />
+            </div>
+            <div class="flat">
+              <a href="bias_measurement.html" class="explore-btn"
+                >&larr; Back To measurement</a
+              >
+              <a href="bias_mitigation.html" class="explore-btn"
+                >Refresh the page</a
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <p>
+        &copy; CS1102 - Course Project - 2025/2026 Semester B
+        <br />Project Topic: LLM for Social Equity: Measuring and Reducing Bias
+        in Language <br />Chan Chak Wing;Chan Kwan To;Lo Wai Sum
+      </p>
+    </footer>
+  </body>
+</html>

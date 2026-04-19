@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS1102 - LLM for Social Equity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.cityu.edu.hk/">
+                <img src="./Images/CityU_logo.svg.png" alt="CityU Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="genai.html">Generative AI</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="genai1.html">AI Architecture</a></li>
+                        <li><a href="genai2.html">AI Train Flow</a></li>
+                        <li><a href="genai3.html">Foundation Model</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="NLP.html">Mechanism</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NLP_SLM.html">Statistical Language Model</a></li>
+                        <li><a href="NLP_NLM.html">Neural Language Model</a></li>
+                        <li><a href="NLP_PLM.html">Pre-Trained Language Model</a></li>
+                        <li><a href="NLP_LLM.html">Large Language Model</a></li>
+                        <li><a href="Comparision.html">Comparision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="bias.html">Bias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bias_source.html">The Source of Bias</a></li>
+                        <li><a href="bias_measurement.html">Measurement of Bias</a></li>
+                        <li><a href="bias_mitigation.html">Mitigation of Bias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="discovery.html">Discoveries</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discovery_1.html">Gender Bias in Tone</a></li>
+                        <li><a href="discovery_2.html">LLMs adopt in Hiring</a></li>
+                        <li><a href="discovery_3.html">Prompt Engineering</a></li>
+                        <li><a href="discovery_4.html">Ideal</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+                    <h2>Intro of Bias</h2>
+                    Bias represents systematic deviations in data or models. While technically necessary for learning,
+                    it
+                    becomes unfairness when producing discriminatory outcomes.
+                    <br><br>
+                    <h2>Distinguishing "Bias" vs. "Unfairness"</h2>
+                    <h3>Bias</h3>
+                    <p>
+                        a neutral, technical concept referring to systematic
+                        deviations in a model’s outputs. <br>It comes from:
+                    <ul>
+                        <li>uneven data distributions (statistical bias)</li>
+                        <li>model’s built-in inductive bias (necessary for learning and generalization)</li>
+                        <li>various training errors. </li>
+                    </ul>
+                    <br>
+                    Bias is not inherently harmful; for example, inductive bias allows large language models to learn
+                    language patterns from limited text.
+                    Even capturing real-world group differences can be a form of bias without being problematic.
+                    </p>
+
+                    <h3>Unfairness</h3>
+                    <p>
+                        a normative value judgment.
+                        It arises when bias produces harmful, unjust outcomes—especially systematic disadvantage
+                        or discrimination against protected groups (e.g., based on gender, race, or religion)—violating
+                        ethical,
+                        legal, or societal standards of fairness.
+                        <a href="https://www.researchgate.net/publication/337331539_An_overview_of_ethical_issues_in_using_AI_systems_in_hiring_with_a_case_study_of_Amazon's_AI_based_hiring_tool"
+                            target="_blank" rel="noopener" class="apa-citation">(Kodiyan, 2019).</a>
+                    </p>
+
+
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+                        <img src="./Images/Firefly_Gemini Flash_Gender bias- Models demonstrate differing emotional (sentiment) tendencies across gen 197962.png"
+                            alt="Gender Bias Visualization" class="bias-image">
+                        <img src="./Images/unfair.png" alt="Gender Bias Visualization" class="bias-image">
+
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+
+        <article class="content">
+            <div class="two-column">
+                <div class="left-column">
+
+                    <h2>Types of Bias</h2>
+                    <h3>Primary types of social biases </h3>
+                    <ul>
+                        <li><strong>Gender bias:</strong> Models demonstrate differing emotional (sentiment) tendencies
+                            across genders (male, female, and non-binary). For instance, specific professions are
+                            frequently linked to one particular gender.</li>
+                        <li><strong>Race/Ethnicity bias:</strong> Models exhibit biased sentiment toward names or
+                            cultural references associated with specific racial or ethnic groups.</li>
+                        <li><strong>Religion bias:</strong> Mentions of different religious beliefs trigger preset
+                            positive or negative sentiment evaluations.</li>
+                        <li><strong>Occupation bias:</strong> Closely intertwined with gender bias, models tend to
+                            associate certain high-status professional occupations (such as engineering) with particular
+                            demographic groups.</li>
+                    </ul>
+                </div>
+
+                <div class="right-column">
+                    <div class="image-wrapper">
+
+                        <img src="./Images/Race.jpg" alt="Race and Ethnicity Bias" class="bias-image">
+                    </div>
+
+                    <div class="flat">
+                        <a href="bias.html" class="explore-btn">Refresh the Intro</a>
+                        <a href="bias_source.html" class="explore-btn">Find the Source &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+    </main>
+
+    <hr>
+    <footer>
+        <p>
+            &copy; CS1102 - Course Project - 2025/2026 Semester B
+            <br>Project Topic: LLM for Social Equity: Measuring and Reducing Bias in Language
+            <br>Chan Chak Wing;Chan Kwan To;Lo Wai Sum
+        </p>
+    </footer>
+</body>
+
+</html>
