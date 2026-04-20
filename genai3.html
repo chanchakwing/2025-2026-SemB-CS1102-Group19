@@ -80,14 +80,15 @@
                         <li><strong>Pre-training:</strong> They are trained on a vast and diverse range of datasets
                             (text, images, code) before being specialized for specific tasks.</li>
                         <li><strong>Versatility:</strong> A single foundation model can be adapted to power various
-                            applications, from translation and creative writing to image synthesis and data analysis.
+                            applications,.
                         </li>
                     </ul>
 
 
-
-                    <p>In essence, a Foundation Model acts as a "central brain" that provides a base of knowledge and
-                        capability, which can then be fine-tuned for social equity, technical precision, or creative
+                    <br>
+                    <p>In essence, a Foundation Model as the knowledge base, generate the output based on its previous
+                        learning.
+                        capability, which also be fine-tune for output formatin, social norms alignment, technique
                         expression.</p>
                 </div>
 
@@ -172,23 +173,14 @@
                 <div class="left-column">
                     <h2>Post training</h2>
                     <p>To adjust the bias learn from data, make its output fulfill the society's expectation and value.
-
+                    </p>
                     <ul>
                         <li>SFT (Small Instruction Finite Adjustment): Transforms the pre-trained model from a "word
                             chain" into an "instruction executor." Its core lies in data quality, establishing a
                             baseline strategy through a small number of high-quality expert dialogues.</li>
 
-                        <li>RLHF (Reinforcement Learning): Endows the model with social emotional intelligence. It uses
-                            reward models to simulate human ratings and directly optimizes preferences through
-                            algorithms such as DPO, making the answers closer to human responses.</li>
-
-                        <li>Ethical Challenges: Faces the trade-off of 3H (usefulness, honesty, harmlessness).
-                            Over-alignment can lead to "rejection bias" or even an "alignment tax," thereby reducing
-                            logical ability.</li>
-
-                        <li>Continuous Safety: The risk of "forgetting" must be addressed after deployment. Anthropic's
-                            constitutional AI provides a constitutional solution for large-scale automated alignment by
-                            having AI supervise AI.</li>
+                        <li>RLHF (Reinforcement Learning): Model iteratively adjusts its behavior to align with human
+                            preferences.</li>
 
                         <li>Output Guardrails:
                             A monitoring and filtering system. This provides a final
@@ -196,15 +188,17 @@
                             If it detects harmful content
                             such as hate speech, pornography, violence,
                             It immediately blocks it and replaces the answer with a
-                            standard rejection message</li>
+                            standard rejection message. It help AI learn to navigate sensitive topics with tact and
+                            disclaimers to ensure
+                            corporate survival and public acceptance
+                        </li>
                     </ul>
 
 
-                    <br><br> It help AI learn to navigate sensitive topics with tact and disclaimers to ensure
-                    corporate survival and public acceptance
 
 
-                    </p>
+
+
                 </div>
 
                 <div class="right-column">
@@ -298,8 +292,10 @@
 
                 <div class="right-column">
                     <div class="image-wrapper">
-                        <img src="./Images/representation_1.png" alt="Representation Issues in Foundation Models" class="bias-image">
-                        <img src="./Images/representation_2.png" alt="Representation Issues in Foundation Models" class="bias-image">
+                        <img src="./Images/representation_1.png" alt="Representation Issues in Foundation Models"
+                            class="bias-image">
+                        <img src="./Images/representation_2.png" alt="Representation Issues in Foundation Models"
+                            class="bias-image">
 
                     </div>
                     <div class="flat">
